@@ -32,6 +32,6 @@ learning more about risk management
 
 *Ratios Example Output*:
 
-[[./images/sharpe_ratio_diff_baselines.png]]
+[[./images/sharpe_ratio_rolling.png]]
 
-[[./images/sortino_ratio_closeup.png]]
+[[./images/sortino_ratio_rolling.png]]

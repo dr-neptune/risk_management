@@ -4,7 +4,7 @@ import plotly.io as pio
 pio.templates.default = "plotly_dark"
 
 
-def plot_multiple_time_series(series_dict, opacity_dict=None, file_name=None):
+def plot_multiple_time_series(series_dict, opacity_dict=None, file_name=None, title=None):
     # Create a subplot
     fig = make_subplots()
 
@@ -18,7 +18,8 @@ def plot_multiple_time_series(series_dict, opacity_dict=None, file_name=None):
         )
 
     # Set the title and axis labels
-    title = " ~ ".join(series_dict.keys())
+    if title is None:
+        title = " ~ ".join(series_dict.keys())
 
     fig.update_layout(
         title_text=title,
