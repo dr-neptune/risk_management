@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "absorption-ratio"
+version = "0.1.0"
+description = ""
+authors = ["dr-neptune <mrose4@worcester.edu>"]
+readme = "README.md"
+packages = [{include = "absorption_ratio"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+numpy = "^1.24.3"
+pandas = "^2.0.1"
+scikit-learn = "^1.2.2"
+scikit-optimize = "^0.9.0"
+matplotlib = "^3.7.1"
+yfinance = "^0.2.18"
+seaborn = "^0.12.2"
+bs4 = "^0.0.1"
+rich = "^13.4.1"
+pyarrow = "^12.0.0"
+tqdm = "^4.65.0"
+cytoolz = "^0.12.1"
+frds = "^1.3.0"
+plotly = "^5.15.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
