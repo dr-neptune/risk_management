@@ -4,7 +4,7 @@ import plotly.io as pio
 pio.templates.default = "plotly_dark"
 
 
-def plot_multiple_time_series(series_dict, opacity_dict=None):
+def plot_multiple_time_series(series_dict, opacity_dict=None, file_name=None):
     # Create a subplot
     fig = make_subplots()
 
@@ -24,6 +24,9 @@ def plot_multiple_time_series(series_dict, opacity_dict=None):
         title_text=title,
         showlegend=True
     )
+
+    if file_name is not None:
+        fig.write_html(f'figures/{file_name}.html')
 
     # Show the plot
     fig.show()

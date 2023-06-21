@@ -8,7 +8,8 @@ def sharpe_ratio(returns, risk_free_rate):
 
 plot_multiple_time_series({'Sharpe Ratio Random': sharpe_ratio(portfolio_real_returns, baseline_real_returns),
                            'Sharpe Ratio Poor Baseline': sharpe_ratio(portfolio_real_returns, baseline_real_returns * 0.8),
-                           'Sharpe Ratio Strong Baseline': sharpe_ratio(portfolio_real_returns, baseline_real_returns * 1.2)})
+                           'Sharpe Ratio Strong Baseline': sharpe_ratio(portfolio_real_returns, baseline_real_returns * 1.2)},
+                          file_name='sharpe_ratio')
 
 # sortino ratio = average returns / downside risk
 # where downside risk is average negative returns
@@ -50,6 +51,7 @@ plot_multiple_time_series({'Sortino Ratio Random': calculate_sortino_ratio(portf
                            'Sortino Ratio Strong Baseline': calculate_sortino_ratio(portfolio_pct_returns, baseline_pct_returns * 1.2)},
                           {'Sortino Ratio Random': 1,
                            'Sortino Ratio Poor Baseline': 1,
-                           'Sortino Ratio Strong Baseline': 1})
+                           'Sortino Ratio Strong Baseline': 1},
+                          file_name='sortino_ratio')
 
 calculate_sortino_ratio(portfolio_pct_returns, baseline_pct_returns)
