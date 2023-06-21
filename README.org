@@ -15,11 +15,6 @@ learning more about risk management
 | ratios.py                       | tinkering with Sharpe and Sortino ratio                                                    |
 |                                 |                                                                                            |
 
-*Ratios Example Output*:
-
-[[./images/sharpe_ratio_diff_baselines.png]]
-
-[[./images/sortino_ratio_closeup.png]]
 
 *Brinson Example output:*
 
@@ -34,3 +29,9 @@ learning more about risk management
 [[./images/absorption_ratio_2000s.png]]
 
 [[./images/absorption_ratio_1940s.png]]
+
+*Ratios Example Output*:
+
+[[./images/sharpe_ratio_diff_baselines.png]]
+
+[[./images/sortino_ratio_closeup.png]]
