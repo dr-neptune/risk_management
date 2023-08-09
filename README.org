@@ -3,17 +3,18 @@
 This repository contains various small toy programs that are used for
 learning more about risk management
 
-| file                            | topic                                                                                      |
-|---------------------------------+--------------------------------------------------------------------------------------------|
-| brinson.py                      | Brinson-Hood-Beebower Model                                                                |
-|                                 | decompose return attribution into allocation, selection, and interaction effects           |
-|                                 | https://www.cfainstitute.org/-/media/documents/support/programs/cipm/2019-cipm-l1v1r5.ashx |
-| absorption_ratio.py             | Kritzman et al Absorption Ratio for measuring Systemic Risk                                |
-|                                 | measure how tightly or loosely coupled markets are                                         |
-|                                 | http://web.mit.edu/finlunch/Fall10/PCASystemicRisk.pdf                                     |
-| absorption_ratio_french_data.py | application of absorption ratio on data from Ken French                                    |
-| ratios.py                       | tinkering with Sharpe and Sortino ratio                                                    |
-|                                 |                                                                                            |
+| file                            | topic                                                                                                                  |
+|---------------------------------+------------------------------------------------------------------------------------------------------------------------|
+| brinson.py                      | Brinson-Hood-Beebower Model                                                                                            |
+|                                 | decompose return attribution into allocation, selection, and interaction effects                                       |
+|                                 | https://www.cfainstitute.org/-/media/documents/support/programs/cipm/2019-cipm-l1v1r5.ashx                             |
+| absorption_ratio.py             | Kritzman et al Absorption Ratio for measuring Systemic Risk                                                            |
+|                                 | measure how tightly or loosely coupled markets are                                                                     |
+|                                 | http://web.mit.edu/finlunch/Fall10/PCASystemicRisk.pdf                                                                 |
+| absorption_ratio_french_data.py | application of absorption ratio on data from Ken French                                                                |
+| ratios.py                       | tinkering with Sharpe and Sortino ratio                                                                                |
+| mixture_models.py               | playing around with regime changes using multivariate mixture models, gaussian mixture models and hidden markov models |
+
 
 
 *Brinson Example output:*
@@ -35,3 +36,7 @@ learning more about risk management
 [[./images/sharpe_ratio_rolling.png]]
 
 [[./images/sortino_ratio_rolling.png]]
+
+*Regime Change Output*:
+
+[[./images/hmm_regime_change.png]]
